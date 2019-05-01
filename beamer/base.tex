@@ -1,0 +1,83 @@
+\documentclass{beamer}
+    \usepackage[UTF8]{ctexcap} %用于支持中文
+    % \usepackage[utf8]{inputenc} % 这个包没法支持中文
+
+    \usetheme{CambridgeUS} %这里来定义主题，如果要更多的主题，可以访问 http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+
+    \begin{document}
+        \begin{frame}
+            \title[Android的介绍]{Latex beamer介绍}
+            \subtitle {--从文档自己展示起}
+            \author{Sailist}
+            \date{\today}
+            \titlepage %这里必须写上让上面的内容显示出来
+        \end{frame}
+        
+        \begin{frame}{目录}
+            该页定义了目录
+
+            \tableofcontents
+        \end{frame}
+
+        \begin{frame}{标题的第一种出现方式}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{标题的另一种写法}
+        \end{frame}
+        
+        \begin{frame}
+            这里可以写一些内容，是正常的文本。\\
+            Here can write some content.
+        \end{frame} 
+        
+        \begin{frame}
+            下面定义的是列表，和Latex一样。\\
+            Here define the itemize , the grammer is the same as other latex code.
+            \begin{itemize}
+                \item item 1
+                \item item 2
+            \end{itemize}
+        \end{frame} 
+        
+        \begin{frame}
+            使用不同的主题，可以有不同的环境色.\\
+            Use different theme can change the style.\\
+            所有的可供选择的主题所在的链接：\\
+           % http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+        \end{frame}
+
+        \section{这里可以定义标题Here define the section.}
+        \begin{frame}
+            
+            嘿，看上面！\\
+            Hey,look the top line.
+
+        \end{frame}
+
+
+        \subsection{这里定义了子标题Here define the subsection} %the beamer may not support subsubsection.
+        \begin{frame}
+            
+            继续看。\\
+            continue look.
+        \end{frame}
+        \section{动画入门 start animate}
+        \begin{frame}
+
+            只支持逐步切换，这是第一张。\\
+            This is the first step.\\
+            \pause
+            只支持逐步切换，这是第二张。\\
+            This is the second stop.
+            
+        \end{frame}
+         
+
+        \begin{frame}
+            \frame[plain]
+            这一页定义了plain方式。
+            This slide define the plain style.
+        \end{frame}
+
+    \end{document}
