@@ -1,0 +1,154 @@
+\begin{document}
+  % 摘要
+  \begin{abstract}
+    This is a test abstract
+    % 关键字
+    \begin{keywords}
+    keyword1; keyword2
+    \end{keywords}
+  \end{abstract}
+
+\maketitle
+
+%%段落
+\section{Introduction}
+
+%% 子段落
+\subsection{Other Assumptions}
+
+% 加粗颜色（两个叠加）
+\textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input matlab source:}}
+% 字体颜色
+\textcolor[rgb]{0.98,0.00,0.00}{Input matlab source:}
+%% 点列表
+\begin{itemize}
+  %%加粗
+  \item \textbf{Applies widely}\\
+  This  system can be used for many types of airplanes
+  \item maximizes the outgoing velocity of the ball.
+\end{itemize}
+
+%% 着重强调
+\emph{center of percussion} [Brody 1986]
+
+%% 定理
+\begin{Theorem} \label{thm:latex}
+this is a Theorem
+\end{Theorem}
+
+%% 引理
+\begin{Lemma} \label{lem:tex}
+this is a Lemma
+\end{Lemma}
+
+%% 证明
+\begin{proof}
+this is a proof
+\end{proof}
+
+%% 公式 
+%% https://www.codecogs.com/latex/eqneditor.php
+%% http://www.hostmath.com/
+\begin{equation}
+Q(x,y;r,p,e)
+\end{equation}
+  
+
+%% 表格，在线生成表格网站：http://www.tablesgenerator.com/
+%% 或http://truben.no/latex/table/
+\begin{table}[]
+  \begin{tabular}{lllll}
+   &  &  &  &  \\
+   &  &  &  &  \\
+   &  &  &  &  \\
+   &  &  &  & 
+  \end{tabular}
+\end{table}
+
+%% 图片
+\begin{figure}[htb]
+  \small
+  \centering
+  \includegraphics[width=12cm]{graph-model.eps}
+  \caption{this input the figure name} \label{fig:temp}
+\end{figure}
+ 
+%% 多张图片
+\begin{figure}[htbp]
+  \centering
+  \subfigure[pic1.]{
+  \includegraphics[width=5.5cm]{mcmthesis-aaa.eps}
+  }
+  \quad
+  \subfigure[pic2.]{
+  \includegraphics[width=5.5cm]{mcmthesis-aaa.eps}
+  } 
+  \quad
+  \subfigure[pic3.]{
+  \includegraphics[width=5.5cm]{mcmthesis-aaa.eps}
+  }
+  \quad
+  \subfigure[pic4.]{
+  \includegraphics[width=5.5cm]{mcmthesis-aaa.eps}
+  }
+  \caption{ pics}
+\end{figure}
+
+
+this is a ref to figure-\ref{fig:temp}
+
+\[
+  \begin{pmatrix}{*{20}c}
+  {a_{11} } & {a_{12} } & {a_{13} }  \\
+  {a_{21} } & {a_{22} } & {a_{23} }  \\
+  {a_{31} } & {a_{32} } & {a_{33} }  \\
+  \end{pmatrix}
+  = \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
+\]
+ 
+\[
+  p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
+  r!\,(-1)^{j/2},&\text{if $j$ is even}
+  \end{cases}
+\]
+
+
+\[
+  \arcsin \theta  =
+  \mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}\mkern-31.2mu
+  \bigodot}\limits_\varphi
+  {\mathop {\lim }\limits_{x \to \infty } \frac{{n!}}{{r!\left( {n - r}
+  \right)!}}} \eqno (1)
+\]
+
+  % %% 引用页
+  % \begin{thebibliography}{99}
+  %   % Greff2015LSTM
+  %   \bibitem{b1} D.~E. KNUTH   The book  the American
+  %     Mathematical Society and Addison-Wesley
+  %     Publishing Company , 1984-1986.
+  %   \bibitem{b2}Lamport, Leslie, : `` A Document Preparation System '',Addison-Wesley Publishing Company, 1986.
+  %   \bibitem[Sza]{bt}Lamport, Leslie, : `` A Document Preparation System '',Addison-Wesley Publishing Company, 1986.
+
+
+  %   \bibitem{b3}\url{http://www.latexstudio.net/}
+  % \end{thebibliography}
+
+  %% 使用引用
+  this is the usage of cite: \cite{Greff2015LSTM} 
+
+  %% 添加引用（固定格式）
+  \bibliographystyle{abbrv}
+  \bibliography{bibfile} 
+
+  %% 附录页
+  \begin{appendices}
+    \section{First appendix}
+    \textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input matlab source:}}
+    %% 附加代码，支持C,C++,Java,Matlab,Mathematica
+    % \lstinputlisting[language=Matlab]{./code/mcmthesis-matlab1.m}
+    \section{Second appendix}
+
+    some more text \textcolor[rgb]{0.98,0.00,0.00}{\textbf{Input C++ source:}}
+    % \lstinputlisting[language=C++]{./code/mcmthesis-sudoku.cpp}
+  \end{appendices}
